@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Stimulus</string>
+    <string name="pref_key" translatable="false">pref_key</string>
+
+    <string name="title_quotes_by_famous_peoples">Top Quotes By Famous Peoples</string>
+    <string name="title_top_quotes_topics">Top Quotes Topics</string>
+    <string name="title_top_biographies">Top Biographies </string>
+    <string name="title_top_lessons">Top Lessons</string>
+    <string name="success">Success</string>
+    <string name="title_top_quotes">Top Quotes</string>
+    <string name="happy">Happy</string>
+    <string name="cel_bill_gates">Bill Gates</string>
+    <string name="cel_jeff_bezos">Jeff Bezos</string>
+    <string name="cel_steve_jobs">Steve Jobs</string>
+    <string name="cel_elon_musk">Elon Musk</string>
+    <string name="cel_br_ambedkar">B. R. Ambedkar</string>
+    <string name="cel_Stephen_Hawking">Stephen Hawking</string>
+    <string name="cel_Sundar_Pichai">Sundar Pichai</string>
+    <string name="cel_abdul_kalam">Abdul Kalam</string>
+    <string name="cel_naredra_modi">Naredra Modi</string>
+    <string name="cel_jack_ma">Jack Ma</string>
+    <string name="cel_ratan_tata">Ratan Tata</string>
+    <string name="cel_albert_einstein">Albert Einstein</string>
+    <string name="cel_obama">Obama</string>
+    <string name="cel_chanakya">Chanakya</string>
+    <string name="cel_swami_vivekananda">Swami Vivekananda</string>
+    <string name="cel_satya_nadela">Satya Nadela</string>
+    <string name="change_language">Change Language</string>
+    <string name="hindi">Hindi</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="copy">Copy</string>
+    <string name="add_quotes">Add your quotes</string>
+    <string name="enteryourtitle">Enter your title</string>
+    <string name="enteryourmaintitle">Enter your main title</string>
+    <string name="save">Save</string>
+    <string name="writeyourquotes">Write your quote here.</string>
+    <string name="delete">Delete</string>
+    <string name="View_more">View more</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upcomingupdates">Upcoming updates</string>
+    <string name="app_ver">V 1.2</string>
+    <string name="st_adbob_app_id">ca-app-pub-4932030229664746~5203344775</string>
+
+    <!--test ads add-->
+
+<!--    <string name="st_banner_one_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="st_interstial_one_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="st_rewared_one_id">ca-app-pub-3940256099942544/5224354917</string>-->
+
+    <!--real ad id-->
+     <string name="st_banner_one_id">ca-app-pub-4932030229664746/9228706922</string>
+    <string name="st_interstial_one_id">ca-app-pub-4932030229664746/9883829962</string>
+    <string name="st_rewared_one_id">ca-app-pub-4932030229664746/5288627766</string>
+
+    <string name="st_banner_unit_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="st_interstial_unit_test">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="st_rewared_unit_test">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="app_about">Stimulus Motivational App is a free inspiring app that shows you a new motivational quotes , Biographyies and Important leesons , at a time of your choosing. You can copy, share inspirational quotes are available. Plus, all this is FREE! At every stage of your life and career, this app will help you to keep motivated with various categories of quotes. "\n\n"If you have any suggestions as to how we can improve this inspirational quotes app, we’d love to hear from you. Get in touch with me at www.kalpeshdoru@gmail.com Thank you for supporting us! Share the motivational quotes you love with your friends and family. "\n\n"Let’s make the world a better place together.</string>
+
+</resources>

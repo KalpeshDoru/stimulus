@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.imkalpesh.stimulus.models.DashboardChildModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvMain"
+                android:layout_width="@dimen/size_120dp"
+                android:layout_height="@dimen/size_120dp"
+                android:layout_margin="5dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="@dimen/size_5dp">
+
+                <RelativeLayout
+                    android:id="@+id/childLayoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_child_item"
+                        bindImage="@{data.childImageResource}"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/biily"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"
+                        android:backgroundTint="@color/colorWhite" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/child_item_title"
+                        style="@style/nunitoBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorLightBlack"
+                        android:padding="@dimen/size_5dp"
+                        android:text="@{data.childItemTitle}"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        tools:text="Kalpesh Doru" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="data"
+            type="com.imkalpesh.stimulus.models.ButtomSheetModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:padding="@dimen/size_5dp"
+            bind="@{data.imgResource}"
+            android:tint="@color/colorIconGray" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAboutUs"
+            style="@style/nunitoSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivInfo"
+            android:padding="@dimen/size_5dp"
+            android:gravity="center_vertical"
+            android:text="@{data.buttomSheetTitle}"
+            tools:text="Motivation is the x"/>
+    </RelativeLayout>
+</layout>

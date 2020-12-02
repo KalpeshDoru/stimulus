@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--Font Style-->
+    <style name="nunitoExtraLight" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/nunito_extralight</item>
+    </style>
+
+    <style name="nunitoLight">
+        <item name="android:fontFamily">@font/nunito_light</item>
+    </style>
+
+    <style name="nunitoRegular">
+        <item name="android:fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="nunitoSemiBold">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+    </style>
+
+    <style name="nunitoBold">
+        <item name="android:fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="nunitoExtraBold" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
+    </style>
+
+    <style name="nunitoBlack" tools:ignore="UnusedResources">
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+    <!--*****-->
+</resources>

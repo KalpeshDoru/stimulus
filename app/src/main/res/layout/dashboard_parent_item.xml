@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="parentData"
+            type="com.imkalpesh.stimulus.models.DashboardParentModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Title-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/parent_item_title"
+            style="@style/nunitoExtraBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_8dp"
+            android:padding="5dp"
+            android:overScrollMode="never"
+            android:text="@{parentData.parentItemTitle}"
+            android:textSize="@dimen/size_20sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/parent_item_viewMore"
+            style="@style/nunitoExtraBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/size_2dp"
+            android:layout_marginEnd="@dimen/size_5dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:text="@string/View_more"
+            android:visibility="gone" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parent_item_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            app:cardCornerRadius="@dimen/size_5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/child_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_5dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/size_5dp"
+                    android:overScrollMode="never" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvChildAdd"
+                    android:layout_width="125dp"
+                    android:layout_height="@dimen/size_125dp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:layout_toEndOf="@id/child_recyclerview"
+                    app:cardCornerRadius="@dimen/size_5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAdd_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/size_5dp"
+                        android:src="@drawable/ic_add"
+                        android:tint="@android:color/darker_gray" />
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</layout>

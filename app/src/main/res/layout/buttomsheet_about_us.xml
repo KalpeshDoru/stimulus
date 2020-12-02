@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rlAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        android:padding="5dp"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:id="@+id/viewSepOne"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@color/colorIconGray" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_below="@id/viewSepOne"
+            android:padding="@dimen/size_5dp"
+            android:src="@drawable/info"
+            android:tint="@color/colorIconGray" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAboutUs"
+            style="@style/nunitoSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewSepOne"
+            android:layout_toEndOf="@id/ivInfo"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/txt_16sp"
+            android:padding="@dimen/size_5dp"
+            android:text="@string/app_about" />
+
+        <View
+            android:id="@+id/viewSepTwo"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvAboutUs"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@color/colorIconGray" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_below="@id/viewSepTwo"
+            android:padding="@dimen/size_5dp"
+            android:src="@drawable/mail"
+            android:tint="@color/colorIconGray" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEmail"
+            style="@style/nunitoSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_below="@id/viewSepTwo"
+            android:textSize="@dimen/txt_16sp"
+            android:layout_toEndOf="@id/ivInfo"
+            android:gravity="center_vertical"
+            android:padding="@dimen/size_5dp"
+            android:text="www.kalpeshdoru@gmail.com" />
+
+        <View
+            android:id="@+id/viewSepThree"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvEmail"
+            android:layout_margin="@dimen/size_5dp"
+            android:background="@color/colorIconGray" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.general.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+
+        <com.imkalpesh.stimulus.helper.CustomViewPager
+            android:id="@+id/pager"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.progressindicator.ProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:id="@+id/process"
+            style="@style/Widget.MaterialComponents.ProgressIndicator.Circular.Indeterminate"
+            app:indicatorColors="@array/progress_colors"
+            app:circularRadius="@dimen/size_20dp"
+            app:growMode="incoming"/>
+
+    </RelativeLayout>
+
+</layout>

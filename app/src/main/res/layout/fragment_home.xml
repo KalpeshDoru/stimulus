@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.HomeFragment">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:overScrollMode="never" />
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvMain"
+                android:layout_centerHorizontal="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/st_banner_one_id" />
+
+            <!--   <RelativeLayout
+                   android:id="@+id/adView"
+                   android:layout_below="@id/rvMain"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   />-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvUpcomingUpdates"
+                style="@style/nunitoExtraBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adView"
+                android:layout_marginStart="@dimen/size_8dp"
+                android:drawableEnd="@drawable/ic_new"
+                android:drawablePadding="@dimen/size_10dp"
+                android:padding="5dp"
+                android:text="@string/upcomingupdates"
+                android:textSize="@dimen/size_20sp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/tvUpcomingUpdates"
+                android:layout_margin="@dimen/size_5dp"
+                app:cardCornerRadius="@dimen/size_13dp"
+                app:cardElevation="@dimen/size_dp0">
+
+                <com.imkalpesh.stimulus.helper.CustomViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_150dp"
+                    android:background="@color/colorWhite" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAddQuotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/size_20sp"
+                android:src="@drawable/ic_add"
+                android:visibility="gone"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:fabSize="normal"
+                app:tint="@color/colorWhite" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

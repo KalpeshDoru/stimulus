@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.DashboardActivity">
+
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/custom_action_bar" />
+        <!-- This is the parent RecyclerView-->
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_app_bar"
+            android:layout_below="@id/action_bar"
+            android:layout_centerInParent="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/windowBackground"
+            android:showAsAction="always|collapseActionView"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@color/selector_bottom_navigation"
+            app:itemRippleColor="@color/colorPrimary"
+            app:itemTextColor="@color/selector_bottom_navigation"
+            app:labelVisibilityMode="auto"
+            app:menu="@menu/bottom_menu" />
+    </RelativeLayout>
+</layout>

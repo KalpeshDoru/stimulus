@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/action_bar_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorWhite"
+            android:clipToPadding="false">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="17dp"
+                android:src="@drawable/ic_back"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                style="@style/nunitoBold"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                tools:ignore="RtlCompat"
+                tools:text="Dashboard" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_add"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="17dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_add"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_below="@id/action_bar_main_layout"/>
+    </RelativeLayout>
+    <!--      <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbar_main"
+              android:layout_width="match_parent"
+              android:layout_height="?android:attr/actionBarSize"
+              android:background="@color/colorWhite"
+              app:contentInsetEnd="0dp"
+              app:contentInsetLeft="0dp"
+              app:contentInsetRight="0dp"
+              app:contentInsetStart="0dp">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="?android:attr/actionBarSize"
+                  android:background="@color/colorWhite"
+                  android:clipToPadding="false"
+                  android:elevation="10dp">
+
+                  <androidx.appcompat.widget.AppCompatImageView
+                      android:id="@+id/iv_back"
+                      android:layout_width="?android:attr/actionBarSize"
+                      android:layout_height="?android:attr/actionBarSize"
+                      android:background="?android:attr/selectableItemBackgroundBorderless"
+                      android:clickable="true"
+                      android:focusable="true"
+                      android:padding="17dp"
+                      android:visibility="gone"
+                      android:src="@drawable/ic_back" />
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/tv_title"
+                      style="@style/nunitoBold"
+                      android:layout_width="match_parent"
+                      android:layout_height="?android:attr/actionBarSize"
+                      android:gravity="center_vertical"
+                      android:textAlignment="center"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                      tools:text="Dashboard" />
+
+              </RelativeLayout>
+
+          </androidx.appcompat.widget.Toolbar>
+  -->
+
+</layout>

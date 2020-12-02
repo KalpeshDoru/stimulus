@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuQuotes"
+        android:icon="@drawable/leftquote"
+        android:title="Quotes"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuLessons"
+        android:icon="@drawable/learning"
+        android:title="Lessons"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuBiographies"
+        android:icon="@drawable/book"
+        android:title="Biographies"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        tools:ignore="HardcodedText" />
+
+
+</menu>

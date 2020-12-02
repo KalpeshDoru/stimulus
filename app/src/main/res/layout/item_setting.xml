@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activity.general.SettingActivity">
+
+    <data>
+        <variable
+            name="data"
+            type="com.imkalpesh.stimulus.models.SettingModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearOne"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            bind="@{data.imgResource}"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/size_7dp"
+            app:tint="@color/colorDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_item_name"
+            style="@style/nunitoSemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/size_5dp"
+            android:paddingEnd="@dimen/size_5dp"
+            android:text="@{data.settingTitle}"
+            android:textColor="@color/color50Black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,UnusedAttribute"
+            tools:text="Change Password" />
+
+    </LinearLayout>
+
+</layout>
