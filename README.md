@@ -17,4 +17,4 @@ Get in touch with us at www.kalpeshdoru.com Thank you for supporting us!
 
 Share the motivational quotes you love with your friends and family … let’s make the world a better place together. Install Stimulus now!
 If you have some great motivation quotes and want to share with all the users of the app, you can send them to us, and we will add them to this app and make an update.
-
+![Untitled-1](https://user-images.githubusercontent.com/34159164/154837262-66c18e32-ee11-43e2-935a-79a7779b5ceb.png)
